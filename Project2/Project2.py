@@ -10,7 +10,6 @@ import os
 # For dealing with json responses we receive from the API
 import json
 
-os.environ['TOKEN'] = 'AAAAAAAAAAAAAAAAAAAAAK4OhwEAAAAAmtiEB0WV%2BeyAnBq0atqjgiQLxFc%3DlklRgMBagvSy8P0AHYhk6DkaEN8yuvHGyLp8YlSj6RShPZjRkK'
 
 def auth():
     return os.getenv('TOKEN')
