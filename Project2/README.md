@@ -18,4 +18,4 @@ Write test programs to exercise different Google NLP APIs. Focus on sentiment an
 ### Phase 2: Build Your Own Social Media Analyzer
 #### Define Minimum Viable Product and User Stories
 - Access to public Twitter timeline
-- 
+- Build a user interface?
