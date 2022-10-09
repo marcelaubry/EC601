@@ -6,6 +6,8 @@ Marcel Aubry 2022
 ### Phase 1.(a): Twitter APIs
 'Project2.py' contains test programs to exercise different Twitter APIs such as retrieving tweets depending on their time posted, by hashtags, or even if they are retweets of another tweet. I have decided to retrieve multiple pieces of information about the tweet, which are deemed to me as the most important; they include the text, the author's id, the time of creation, and the public metrics attached to it. If the social media analyzer requires more information, I will add it on later.
 For this example, I retrieved the last 8 retweets containing the hashtag #cryto. For the purpose of this demo, I am outputting the 4th result of the result of the query. <br> <br>
+![image](https://user-images.githubusercontent.com/52050560/194782820-9313058a-113b-40a0-a27d-7683df0160a0.png)
+
 
 ### Phase 1.(a): Botometer
 'Project2Botometer.py' contains a test case where I test multiple accounts ranging from my personal one to my friends', a celebrity, and an organization. My goal with this was to see which accounts would be flagged as being a bot with largely different types of accounts. <br>
