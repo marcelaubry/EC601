@@ -20,8 +20,8 @@ def create_headers(bearer_token):
 
     
 def create_url():
-    query = "query=%23China lang:en -(is:retweet)"
-    max_results = "max_results=10"
+    query = "query=%23crypto lang:en -(is:retweet)"
+    max_results = "max_results=12"
     tweet_fields = "tweet.fields=created_at,public_metrics,attachments,text"
     expansions = "expansions=attachments.media_keys,author_id"
     user_fields = "user.fields=id,name,username,description"
@@ -41,7 +41,7 @@ def main():
     url = create_url()
     headers = create_headers(bearer_token)
     json_response = connect_to_endpoint(url, headers)
-    print(json.dumps(json_response, indent=4, sort_keys=True))
+    print(json.dumps(json_response["data"][4], indent=4, sort_keys=True))
 
 
 if __name__ == "__main__":
