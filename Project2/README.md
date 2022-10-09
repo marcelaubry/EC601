@@ -4,11 +4,16 @@ Marcel Aubry 2022
 
 ## Project Phases
 ### Phase 1.(a): Twitter APIs
-Write test programs to exercise different twitter APIS.
-'Project2Twitter' contains many different test cases ........ (explain tests and results)
+'Project2.py' contains test programs to exercise different Twitter APIs such as retrieving tweets depending on their time posted, by hashtags, or even if they are retweets of another tweet. I have decided to retrieve multiple pieces of information about the tweet, which are deemed to me as the most important; they include the text, the author's id, the time of creation, and the public metrics attached to it. If the social media analyzer requires more information, I will add it on later.
+For this example, I retrieved the last 8 retweets containing the hashtag #cryto. For the purpose of this demo, I am outputting the 4th result of the result of the query. <br> <br>
+![image](https://user-images.githubusercontent.com/52050560/194782820-9313058a-113b-40a0-a27d-7683df0160a0.png)
+
+
 ### Phase 1.(a): Botometer
-Write test programs for the Botometer.
-'Project2Botometer' contains many different test cases .......... (explain tests and results)
+'Project2Botometer.py' contains a test case where I test multiple accounts ranging from my personal one to my friends', a celebrity, and an organization. My goal with this was to see which accounts would be flagged as being a bot with largely different types of accounts. <br>
+To test this, I looked over which accounts had a CAP score of over 0.8. (For example, suppose an account has a raw bot score of 0.96/1 (equivalent to 4.8/5 display score on the website) and CAP 90%. This means that 90% of accounts with a raw bot score above 0.96 are labeled as bots, or, as indicated on the website, 10% of accounts with a bot score above 4.8/5 are labeled as humans. In other words, if you use a threshold of 0.96 on the raw bot score (or 4.8 on the display score) to classify accounts as human/bot, you would wrongly classify 10% of accounts as bots -- a false positive rate of 10%.) To my surpise, out of the accounts I tested, mine was flagged as the bot account with a very high score of 4.2/5 overall (humourous as I am the most certain that that account is NOT a bot). I suspect this is due to my lack of posting lately mixed with my limited interaction with my feed. <br> I found that the most interesting information the Botometer API provides is under "display_scores" "universal".
+Here is an output of my code: <br> <br>
+![image](https://user-images.githubusercontent.com/52050560/194781570-d7c7c521-d761-4f10-b10c-3f1dc0d9a606.png)
 
 ### Phase 1.(b): Google NLP
 Write test programs to exercise different Google NLP APIs. Focus on sentiment analysis
@@ -16,6 +21,11 @@ Write test programs to exercise different Google NLP APIs. Focus on sentiment an
 
 
 ### Phase 2: Build Your Own Social Media Analyzer
-#### Define Minimum Viable Product and User Stories
+Idea: In cryptocurrency swing trading, public hype and excitement about a recent project can be a determining factor on its success, although another cryptocurrency brings more to the table in terms of innovation. My idea would be to retrieve the latest tweets about a new cryptocurrency and see if those who posted them are bots or not. This project could help an investor in determining whether they should invest in that cryptocurrency. Many new projects subsize bots to promote their currency on social media to attract masses and build hype. This project would help expose those projects.
+#### Minimum Viable Product 
+An application that allows the user to input the name of a cryptocurrency and receive a score rating the project based off the amount of the accounts that tweeted about it being a suspected bot.
+#### User Stories
+I, as a cryptocurrency swing trader, am in search of as many reference points before I invest into a new cryptocurrency. With the help of an application that can report back how much social media traffic about a project is being done by a bot, I will be able to better judge the risk I am taking with my investment.
+
 - Access to public Twitter timeline
 - Build a user interface?
