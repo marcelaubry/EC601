@@ -19,6 +19,11 @@ Write test programs to exercise different Google NLP APIs. Focus on sentiment an
 
 
 ### Phase 2: Build Your Own Social Media Analyzer
-#### Define Minimum Viable Product and User Stories
+Idea: In cryptocurrency swing trading, public hype and excitement about a recent project can be a determining factor on its success, although another cryptocurrency brings more to the table in terms of innovation. My idea would be to retrieve the latest tweets about a new cryptocurrency and see if those who posted them are bots or not. This project could help an investor in determining whether they should invest in that cryptocurrency. Many new projects subsize bots to promote their currency on social media to attract masses and build hype. This project would help expose those projects.
+#### Minimum Viable Product 
+An application that allows the user to input the name of a cryptocurrency and receive a score rating the project based off the amount of the accounts that tweeted about it being a suspected bot.
+#### User Stories
+I, as a cryptocurrency swing trader, am in search of as many reference points before I invest into a new cryptocurrency. With the help of an application that can report back how much social media traffic about a project is being done by a bot, I will be able to better judge the risk I am taking with my investment.
+
 - Access to public Twitter timeline
 - Build a user interface?
