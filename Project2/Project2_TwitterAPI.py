@@ -10,7 +10,6 @@ import os
 # For dealing with json responses we receive from the API
 import json
 
-
 def auth():
     return os.getenv('TOKEN')
 
