@@ -16,8 +16,7 @@ Here is an output of my code: <br> <br>
 ![image](https://user-images.githubusercontent.com/52050560/194781570-d7c7c521-d761-4f10-b10c-3f1dc0d9a606.png)
 
 ### Phase 1.(b): Google NLP
-Write test programs to exercise different Google NLP APIs. Focus on sentiment analysis
-.......... (explain tests and results)
+'Project2_GoogleNLP.py' contains the test case I wrote for the Google NLP sentiment analyzer. It took me a very long time to get the API to work due to Google's many steps. Getting the credential to be accepted was the biggest difficulty as my machine would not set the key properly. I had to resort to calling the os library to save the key. For this project, I will be using the analyze_sentiment method. This method works by inputting a text and the output is a score ranging between -1.0 (negative sentiment) and 1.0 (positive sentiment). It also provides the magnitude which is the absolute value of the sentiment. I have attached a couple of examples. One that contains a "happy" text and the other that represents how I felt while trying to make this API work.
 
 
 ### Phase 2: Build Your Own Social Media Analyzer
