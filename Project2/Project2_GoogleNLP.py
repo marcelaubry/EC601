@@ -1,8 +1,14 @@
 from google.cloud import language_v1
+import os
 
 def sample_analyze_sentiment(text_content):
 
-    client = language_v1.LanguageServiceClient(credentials=key)
+    
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/marce/Downloads/project2-365114-4a2eb989b280.json"
+
+    #key = "ya29.a0Aa4xrXM2jdQS5LqDD-Fx_KxGBhiwibQkr9l5PMaiCpiuT5HkK35sXJZhEn0_kFj6HIi_371nZKjQl8Q97HeMw0SUNDArTwIwv6FAdmfE98sgme-HcSMjEa_6jbD1Jj_XVhgLx2_53iX6y-8Jph9ns4MKmzRvEuVQbRrS-CnGiMBCV2svUOy0TFOoG_7LqLCoOY8L2yhvCXHtgmEzPqRUIl-7anicgDvp_H12obqNj0KSZvRU7vYfz9vfbr7eZfLFaTIjGQaCgYKATASARASFQEjDvL96INDwwfDgDqbDbZtaQq2DQ0269"
+
+    client = language_v1.LanguageServiceClient()
 
     # Available types: PLAIN_TEXT, HTML
     type_ = language_v1.Document.Type.PLAIN_TEXT
@@ -35,4 +41,8 @@ def sample_analyze_sentiment(text_content):
     # the automatically-detected language.
     print(u"Language of the text: {}".format(response.language))
 
-sample_analyze_sentiment("I am so happy!")
+print("I am tired, tears are running down my cheeks. My computer is just as pissed as me. Why is it so complicated to use this API?!!?")
+sample_analyze_sentiment("I am tired, tears are running down my cheeks. My computer is just as pissed as me. Why is it so complicated to use this API?!!?")
+print("\n")
+print("We did it! We have successfully made the exercise work like it should! Excellent job everyone!!!")
+sample_analyze_sentiment("We did it! We have successfully made the exercise work like it should! Excellent job everyone!!!")
