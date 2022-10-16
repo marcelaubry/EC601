@@ -6,8 +6,6 @@ def sample_analyze_sentiment(text_content):
     
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/marce/Downloads/project2-365114-4a2eb989b280.json"
 
-    #key = "ya29.a0Aa4xrXM2jdQS5LqDD-Fx_KxGBhiwibQkr9l5PMaiCpiuT5HkK35sXJZhEn0_kFj6HIi_371nZKjQl8Q97HeMw0SUNDArTwIwv6FAdmfE98sgme-HcSMjEa_6jbD1Jj_XVhgLx2_53iX6y-8Jph9ns4MKmzRvEuVQbRrS-CnGiMBCV2svUOy0TFOoG_7LqLCoOY8L2yhvCXHtgmEzPqRUIl-7anicgDvp_H12obqNj0KSZvRU7vYfz9vfbr7eZfLFaTIjGQaCgYKATASARASFQEjDvL96INDwwfDgDqbDbZtaQq2DQ0269"
-
     client = language_v1.LanguageServiceClient()
 
     # Available types: PLAIN_TEXT, HTML
