@@ -40,5 +40,5 @@ Below are two examples when running the program, the first one being for the cry
 An application that allows the user to input the name of a cryptocurrency and receive the amount of tweeters that are bots. Additionally, out of the users that are recognized as real, the average sentiment score will be shown to show how they feel about the upcoming project.
 #### User Stories
 I, as a cryptocurrency swing trader, am in search of as many reference points before I invest into a new cryptocurrency. With the help of an application that can report back how much social media traffic about a project is being done by a bot, I will be able to better judge the risk I am taking with my investment. <br>
-I, as a cryptocurrency swing trader, am in search of what the sentiment of real users have in terms of an upcoming project.
+I, as a cryptocurrency swing trader, am in search of what the sentiment of real users have in terms of a current or upcoming project.
 
